@@ -1,0 +1,387 @@
+:root {
+    --background: #F6F2E9;
+    --surface: #FFFCF6;
+    --sage: #E7EDE2;
+    --lavender: #EAE5F0;
+    --cream: #EDE8DC;
+    --forest: #344B40;
+    --text: #566458;
+    --muted: #92998D;
+    --border: #E6E1D6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'DM Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    padding: 22px 6% 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--border);
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    color: var(--forest);
+    text-decoration: none;
+}
+
+.brand-icon {
+    color: #82977F;
+    font-size: 27px;
+}
+
+.brand-name {
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-size: 76px;
+    font-weight: 400;
+    color: var(--forest);
+    line-height: 1.15;
+}
+
+.header-label {
+    color: var(--muted);
+    font-size: 10px;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+.hero {
+    width: 88%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 65px 0 35px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.eyebrow {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px 20px;
+
+    border: 1px solid #D6DFD2;
+    border-radius: 50px;
+
+    color: var(--forest);
+    background-color: rgba(220, 230, 217, 0.4);
+
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.eyebrow span {
+    color: #82977F;
+    font-size: 16px;
+}
+
+h1 {
+    margin: 28px 0 20px;
+
+    color: var(--forest);
+
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(38px, 5vw, 61px);
+    font-weight: 400;
+
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.intro {
+    max-width: 540px;
+    margin: 0 auto;
+
+    color: var(--text);
+
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.hero-image-wrapper {
+    max-width: 550px;
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 9px;
+
+    background-color: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 22px;
+
+    box-shadow: 0 18px 45px rgba(52, 75, 64, 0.07);
+}
+
+.hero-image {
+    display: block;
+
+    width: 100%;
+    height: 330px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    transition: transform 0.4s ease;
+}
+
+.hero-image-wrapper:hover .hero-image {
+    transform: scale(1.01);
+}
+
+.image-caption {
+    display: block;
+
+    padding: 13px 5px 4px;
+
+    color: var(--muted);
+
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.welcome-section {
+    width: 85%;
+    max-width: 760px;
+
+    margin: 30px auto 55px;
+    text-align: center;
+}
+
+.welcome-decoration {
+    color: #82977F;
+    font-size: 31px;
+    margin-bottom: 5px;
+}
+
+.welcome-text h2 {
+    margin: 8px 0 18px;
+
+    color: var(--forest);
+
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.welcome-text p {
+    margin: 10px auto;
+
+    color: var(--text);
+
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 24px;
+
+    width: 88%;
+    max-width: 1100px;
+
+    margin: 0 auto 55px;
+}
+
+.feature-card {
+    padding: 27px 20px;
+
+    border: 1px solid rgba(52, 75, 64, 0.05);
+    border-radius: 19px;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 30px rgba(52, 75, 64, 0.08);
+}
+
+.sage {
+    background-color: var(--sage);
+}
+
+.lavender {
+    background-color: var(--lavender);
+}
+
+.cream {
+    background-color: var(--cream);
+}
+
+.feature-icon {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: var(--forest);
+    font-size: 32px;
+}
+
+.feature-card h3 {
+    margin: 0 0 12px;
+
+    color: var(--forest);
+
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.feature-card p {
+    margin: 0;
+
+    color: var(--text);
+
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+    padding: 25px 15px;
+
+    border-top: 1px solid var(--border);
+
+    color: var(--muted);
+
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.footer-star {
+    color: #82977F;
+    font-size: 18px;
+}
+
+@media (max-width: 750px) {
+
+    .header {
+        padding: 20px 12px;
+    }
+
+    .brand-name {
+        font-size: 62px;
+    }
+
+    .header-label {
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 30px;
+
+        width: 90%;
+        padding-top: 45px;
+    }
+
+    h1 {
+        font-size: 43px;
+    }
+
+    .intro {
+        font-size: 16px;
+    }
+
+    .hero-image-wrapper {
+        max-width: 550px;
+    }
+
+    .hero-image {
+        height: 270px;
+    }
+
+    .welcome-section {
+        margin-top: 35px;
+    }
+
+    .welcome-text h2 {
+        font-size: 30px;
+    }
+
+    .welcome-text p {
+        font-size: 15px;
+    }
+
+    .features {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+        width: 94%;
+        max-width: 1100px;
+
+        gap: 12px;
+
+        margin: 0 auto 55px;
+    }
+
+    .feature-card {
+        padding: 22px 8px;
+        min-width: 0;
+    }
+
+    .feature-icon {
+        font-size: 26px;
+    }
+
+    .feature-card h3 {
+        font-size: 17px;
+    }
+
+    .feature-card p {
+        font-size: 12px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 9px;
+    }
+}
